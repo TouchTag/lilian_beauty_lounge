@@ -19,12 +19,20 @@
 *{box-sizing:border-box}
 
 body{
-  margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto;
-  background:
-  radial-gradient(900px 500px at 50% -10%, rgba(255,106,0,.18), transparent 60%),
-  linear-gradient(180deg,#06060a,#0b0b10 35%,#070710);
-  color:var(--text);
+    background: linear-gradient(
+        135deg,
+        #012f22,
+        #01412f,
+        #012f22
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 15s ease infinite;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 
 .wrap{
